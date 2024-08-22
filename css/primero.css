@@ -1,3 +1,19 @@
-#primeo{
-    
-}
+
+    /* Definimos la animación llamada "desdeArriba" */
+@keyframes desdeArriba {
+    0% {
+      transform: translate(-50%, -100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicamos la animación al elemento que queremos animar */
+  #primero {
+    background-color: rgb(0, 255, 255, 50%);
+    transform: translate(-50%, -100%); /* Inicialmente oculto arriba */
+    animation: desdeArriba 1s ease forwards; /* 1 segundo de duración */
+  }
