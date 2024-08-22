@@ -11,6 +11,31 @@
     }
 }
 
+/* animación"reja izquierda" */
+@keyframes reja_izquierda {
+    0% {
+        transform: translate(-100%, 100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* animación"reja derecha" */
+@keyframes reja_derecha {
+    0% {
+        transform: translate(100%, 100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
 
 
 
@@ -71,6 +96,8 @@
             background-position: right top;
             background-repeat: no-repeat;
             background-size: 180%;
+            animation: reja_izquierda 1.5s ease-in-out forwards;
+            filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
         }
         div:nth-child(2){
             height: 100%;
@@ -78,6 +105,8 @@
             background-position: right top;
             background-repeat: no-repeat;
             background-size: 180%;
+            animation: reja_derecha 1.5s ease-in-out forwards;
+            filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
       
         }
     }
