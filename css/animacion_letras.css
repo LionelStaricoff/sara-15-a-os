@@ -1,0 +1,31 @@
+#segundo {
+     display: grid;
+     justify-content: space-evenly;
+     grid-template-columns: auto;
+     gap: 20px;
+     text-align: center;
+     padding-top: 5em;
+}
+
+     .animated-title {
+
+         overflow: hidden;
+         white-space: nowrap;
+         opacity: 0;
+         transform: translateX(100%);
+         animation: slideIn 2s forwards;
+     }
+
+     /* Animación para cada letra */
+     @keyframes slideIn {
+         0% {
+             opacity: 0;
+             transform: translateX(100%);
+         }
+
+         100% {
+             opacity: 1;
+             transform: translateX(0);
+         }
+     }
+ 
