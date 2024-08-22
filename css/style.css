@@ -1,0 +1,58 @@
+@import url('./primero.css');
+@import url('./scroll.css');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* @font-face {
+    font-family: 'Lumanosimo';
+    src: url('../pdf/Lumanosimo-Regular.ttf') format('truetype');
+} */
+
+main {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/1/fondo2.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    /* overflow: auto; */
+    display: grid;
+    gap: 20px;
+    transition: all .5s;
+    /* grid-template-columns: repeat(auto-fit, min-max(40em, 1fr)); */
+
+
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 0, 221, 0.5);
+}
+
+#primero {
+    background-color: rgb(0, 255, 255, 50%);
+   
+}
+
+#segundo {
+    background-color: rgba(0, 255, 145, 0.5);
+
+}
+
+#tercero {
+    background-color: rgba(255, 0, 25, 0.5);
+
+}
+
+#cuarto {
+    background-color: rgba(251, 255, 0, 0.5);
+;
+}
