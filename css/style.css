@@ -29,7 +29,7 @@ main {
     background-size: cover;
     display: grid;
     gap: 20px;
-    transition: all .5s;
+    transition: all 2s;
    
 
 

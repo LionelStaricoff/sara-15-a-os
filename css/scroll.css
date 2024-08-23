@@ -4,7 +4,7 @@
   .desaparecer {
     opacity: 1;
     transform: scale(0.5);
-    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 2s;
 
 
   }
