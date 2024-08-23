@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'cloud lucent';
+    src: url('../font/cloud-lucent-regular-maisfontes.0faf/cloud-lucent-regular.ttf') format('truetype');
+}
+
+#tercero {
+    display: grid;
+    place-content: center;
+    padding: 0 1.5em;
+
+    p {
+        font-family: 'cloud lucent';
+        padding-bottom: 1em;
+    }
+}

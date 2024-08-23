@@ -1,6 +1,7 @@
 @import url('./primero.css');
 @import url('./scroll.css');
 @import url('./animacion_letras.css');
+@import url('./tercero.css');
 
 
 
@@ -17,6 +18,8 @@
     src: url('../font/amoresa-Font/Andrey\ Sharonov\ -\ Amoresa\ Regular.otf') format('truetype');
 }
 
+
+
 main {
     height: 100%;
     width: 100%;
@@ -24,11 +27,10 @@ main {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    /* overflow: auto; */
     display: grid;
     gap: 20px;
     transition: all .5s;
-    /* grid-template-columns: repeat(auto-fit, min-max(40em, 1fr)); */
+   
 
 
 }
@@ -47,7 +49,7 @@ section {
 }
 
 #tercero {
-    background-color: rgba(255, 0, 25, 0.5);
+    background-color: rgba(255, 0, 25, 0.1);
 
 }
 
