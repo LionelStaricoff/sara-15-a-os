@@ -7,9 +7,48 @@
     display: grid;
     place-content: center;
     padding: 0 1.5em;
+    border: black 50px solid;
+    border-image-source: url("../img/1/stars_icon_255337.png");
 
+    border-image-repeat: round;
+    border-image-slice: 150;
+    border-image-repeat: space;
+    border-image-width: 50%;
+    margin: 1em;
+    padding: 8em 0;
     p {
         font-family: 'CloudLucent', 'Amoresa', Arial, sans-serif;
         padding-bottom: 1em;
+        &:nth-child(1){
+            animation-delay: 0.1s
+           
+        }
+        &:nth-child(2){
+            animation-delay: 0.3s
+        }
+        &:nth-child(3){
+            animation-delay: 0.5s
+        }
     }
+   
+    img{
+        width: 8em;
+        border-radius: 50%;
+    }
+}
+
+@keyframes parrafo {
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.parrafo_animado{
+    animation: parrafo 2s ease-in-out forwards;
 }
