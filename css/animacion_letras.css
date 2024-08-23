@@ -1,19 +1,23 @@
 #segundo {
      display: grid;
-     justify-content: space-evenly;
-     grid-template-columns: auto;
+     justify-content: center;
+     grid-template-columns: auto auto auto auto;
      gap: 20px;
      text-align: center;
      padding-top: 5em;
+    
 }
 
      .animated-title {
-
+        font-family: 'amoresa';
+        font-weight: bolder;
+        font-size: 2em;
          overflow: hidden;
          white-space: nowrap;
          opacity: 0;
          transform: translateX(100%);
          animation: slideIn 2s forwards;
+         height: fit-content;
      }
 
      /* Animación para cada letra */
