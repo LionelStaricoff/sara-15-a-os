@@ -5,6 +5,18 @@
      gap: 20px;
      text-align: center;
      padding-top: 5em;
+
+
+     border: black 50px solid;
+     border-image-source: url("../img/1/flores.png");
+ 
+     border-image-repeat: round;
+     border-image-slice: 150;
+     border-image-repeat: space;
+     border-image-width: 50%;
+ margin: 1em ;
+ padding: 8em 0 ;
+
     
 }
 
