@@ -46,7 +46,10 @@ main {
 
 section {
     height: 100vh;
-    width: min(50em,100%);
+    width: min(600px,100%);
+    &:first-child{
+        width: 100vw;
+    }
 
 }
 
