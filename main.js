@@ -11,4 +11,4 @@ Util.crearSectionCuatro();
   
     
     // Actualizar contador cada segundo
-    //setInterval(Util.mostrarContador, 1000);
+    setInterval(Util.mostrarContador, 1000);

@@ -1,5 +1,5 @@
-#cuarto{
-    background-image: url('../img/1/flores.png');
+#cuarto {
+    background-image: url('../img/1/flores.webp');
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -8,23 +8,48 @@
     justify-content: space-around;
     text-align: center;
 
-    font-family: 'amoresa',Arial, Helvetica, sans-serif;
+    font-family: 'amoresa', Arial, Helvetica, sans-serif;
     font-size: .5em;
 
-    div:nth-child(4){
+    div:nth-child(4) {
         font-size: 2em;
-       
+
     }
-    img{
+
+    img {
         width: 10em;
         border-radius: 50%;
         object-fit: cover;
 
-        &:nth-child(2){
+        &:nth-child(2) {
             height: 16em;
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
             height: 16em;
+        }
+    }
+
+    .contador {
+        width: 25em;
+        height: 12em;
+        border: solid 5px rgb(245, 202, 34, 0.8);
+        margin: 0 auto;
+        background-image: url('../img/1/corazones-compress.webp');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 20%;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 20px;
+        align-items: end;
+        padding: 0 0.5em 0.5em 0.5em;
+
+        span {
+            border: solid 3px rgb(51, 51, 51, 0.9);
+            background-color: rgb(222, 184, 135, 0.9);
+            height: 50%;
+            width: 1.8em;
         }
     }
 }
