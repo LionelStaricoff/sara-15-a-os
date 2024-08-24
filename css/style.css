@@ -2,6 +2,7 @@
 @import url('./scroll.css');
 @import url('./animacion_letras.css');
 @import url('./tercero.css');
+@import url('./cuarto.css');
 
 
 
@@ -43,17 +44,3 @@ section {
 
 
 
-#segundo {
-    background-color: rgba(0, 255, 145, 0.0);
-
-}
-
-#tercero {
-    background-color: rgba(255, 0, 25, 0.0);
-
-}
-
-#cuarto {
-    background-color: rgba(251, 255, 0, 0.5);
-;
-}

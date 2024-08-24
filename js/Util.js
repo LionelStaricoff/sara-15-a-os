@@ -1,6 +1,24 @@
-
+import {crearSpanAnimation} from './CrearSpanAnimation.js'
 
 export class Util {
+
+    static crearSectionCuatro(){
+        let texto = ['Yazmin Díaz  &',' Rodrigo Rodriguez',
+            'invitam a celebrar los quinceaños de','Sara Elena']
+            texto.forEach(t => new crearSpanAnimation( t, '#cuarto') );
+        
+        
+        (()=>{
+        const section_cuarto = document.querySelector('#cuarto');
+        const fotos = document.createElement('div')
+        fotos.innerHTML = `
+                <img src="./img/1/sara_bb-compress.webp" >
+                    <img src="./img/1/sara_jr-compress.webp" >
+                    <img src="./img/1/sara_coqueta-compress.webp" >
+        `
+        section_cuarto.appendChild(fotos)
+        })()
+        }
 
     static scrollFx() {
         const divs = document.querySelectorAll(".desaparecer");

@@ -1,0 +1,30 @@
+#cuarto{
+    background-image: url('../img/1/flores.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+
+    font-family: 'amoresa',Arial, Helvetica, sans-serif;
+    font-size: .5em;
+
+    div:nth-child(4){
+        font-size: 2em;
+       
+    }
+    img{
+        width: 10em;
+        border-radius: 50%;
+        object-fit: cover;
+
+        &:nth-child(2){
+            height: 16em;
+        }
+        &:nth-child(3){
+            height: 16em;
+        }
+    }
+}
