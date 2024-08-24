@@ -3,5 +3,8 @@ import {crearSpanAnimation} from './CrearSpanAnimation.js'
 
 document.addEventListener("scroll", () => { Util.scrollFx(); });
 
-new crearSpanAnimation(null, 'pedro  pablo', null)
+let texto = ['Yazmin Díaz  &',' Rodrigo Rodriguez',
+    'invitam a celebrar los quinceaños de','Sara Elena']
+    texto.forEach(t => new crearSpanAnimation( t, '#cuarto') )
+
 

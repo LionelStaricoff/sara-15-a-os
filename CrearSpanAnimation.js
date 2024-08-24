@@ -1,8 +1,7 @@
 
 
 export class crearSpanAnimation {
-    constructor(numberSpan, palabras, padre) {
-        this._numberSpan = numberSpan ?? 0;
+    constructor( palabras, padre) {
         this._palabras = palabras ?? '';
         this._padre = document.querySelector(padre ?? 'body');
    
