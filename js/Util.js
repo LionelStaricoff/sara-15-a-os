@@ -5,37 +5,38 @@ export class Util {
     static calcularTiempoRestante() {
         const fechaObjetivo = new Date('2024-09-28T00:00:00');
         const fechaActual = new Date();
-    
+
         const diferencia = fechaObjetivo - fechaActual;
         const segundosRestantes = Math.floor(diferencia / 1000);
-    
+
         const segundos = segundosRestantes % 60;
         const minutos = Math.floor(segundosRestantes / 60) % 60;
         const horas = Math.floor(segundosRestantes / 3600) % 24;
         const dias = Math.floor(segundosRestantes / 86400);
-    
+
         return { dias, horas, minutos, segundos };
     }
-    
+
     static mostrarContador() {
         const tiempoRestante = Util.calcularTiempoRestante();
         const spans = document.querySelectorAll('.counter')
+
         spans[0].innerText = tiempoRestante.dias;
         spans[1].innerText = tiempoRestante.horas;
         spans[2].innerText = tiempoRestante.minutos;
         spans[3].innerText = tiempoRestante.segundos;
         //console.log(`Faltan ${tiempoRestante.dias} días, ${tiempoRestante.horas} horas, ${tiempoRestante.minutos} minutos y ${tiempoRestante.segundos} segundos para el 28 de septiembre de 2024.`);
     }
-    
 
-    
+
+
 
     static crearSectionCuatro() {
         let texto = ['Yazmin Díaz  &', ' Rodrigo Rodriguez',
             'invitam a celebrar los quinceaños de', 'Sara Elena']
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
-
+        //3 fotos
         (() => {
             const section_cuarto = document.querySelector('#cuarto');
             const fotos = document.createElement('div')
@@ -50,6 +51,30 @@ export class Util {
         texto = ['28-Septiembre-2024', '7:00 p.m.']
 
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
+
+        //contador de fecha
+        (() => {
+            const section_cuarto = document.querySelector('#cuarto');
+           
+            const contador = document.createElement('div')
+            contador.classList = 'contador';
+            contador.innerHTML = `
+           <div class="texto_flotante">
+                <i>D</i>
+                <i>H</i>
+                <i>M</i>
+                <i>S</i>
+            </div>
+             
+
+                <span class="counter"></span>
+                <span class="counter"></span>
+                <span class="counter"></span>
+                <span class="counter"></span>
+`
+            section_cuarto.appendChild(contador)
+        })();
+
     }
 
     static scrollFx() {
