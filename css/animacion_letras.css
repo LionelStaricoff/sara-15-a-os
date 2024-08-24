@@ -11,9 +11,9 @@
     border-image-source: url("../img/1/flores.webp");
 
     border-image-repeat: round;
-    border-image-slice: 150;
+    /* border-image-slice: 150; */
     border-image-repeat: space;
-    border-image-width: 50%;
+    border-image-width: 15%;
     margin: 1em;
     padding: 10em 0;
 
