@@ -1,6 +1,8 @@
+
+
 @font-face {
-    font-family: 'CloudLucent';
-    src: url('../font/cloud-lucent-regular-maisfontes.0faf/cloud-lucent-regular.ttf') format('truetype');
+    font-family: 'EBGaramond';
+    src: url('../font/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 #tercero {
@@ -17,7 +19,8 @@
     margin: 1em;
     padding: 8em 0;
     p {
-        font-family: 'CloudLucent', 'Amoresa', Arial, sans-serif;
+        font-family: 'EBGaramond', 'Amoresa', Arial, sans-serif;
+        font-weight: bold;
         padding-bottom: 1em;
         &:nth-child(1){
             animation-delay: 0.1s
