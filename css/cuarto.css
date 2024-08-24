@@ -10,7 +10,7 @@
 
     font-family: 'amoresa', Arial, Helvetica, sans-serif;
     font-size: .5em;
-
+    padding: 10em 0 0 0;
   
     div:nth-child(4) {
         font-size: 2em;
@@ -26,7 +26,7 @@
         width: 100%;
         height: 50px;
         position: absolute;
-        transform: translate(-250px, 120px);
+        transform: translate(-400px, 110px);
     }
 
     div:nth-child(7) {
@@ -41,22 +41,16 @@
         width: 100%;
         height: 50px;
         position: absolute;
-        transform: translate(-150px,6px);
+        transform: translate(-240px,6px);
    
     }
 
     img {
-        width: 10em;
+        width: 15em;
         border-radius: 50%;
-        object-fit: cover;
-
-        &:nth-child(2) {
-            height: 16em;
-        }
-
-        &:nth-child(3) {
-            height: 16em;
-        }
+        object-fit: 100%;
+        height: 16em;
+      margin: 0.5em;
     }
 
     .contador {
@@ -74,6 +68,7 @@
         align-items: end;
         padding: 0 0.5em 0.5em 0.5em;
         position: relative;
+        margin-top: 0.5em;
 
         .texto_flotante {
             position: absolute;
@@ -89,6 +84,7 @@
             text-align: center;
         
             width: 100%;
+    
             
           i{
             padding-right: 0.7em;
