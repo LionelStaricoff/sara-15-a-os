@@ -1,24 +1,51 @@
-import {crearSpanAnimation} from './CrearSpanAnimation.js'
+import { crearSpanAnimation } from './CrearSpanAnimation.js'
 
 export class Util {
 
-    static crearSectionCuatro(){
-        let texto = ['Yazmin Díaz  &',' Rodrigo Rodriguez',
-            'invitam a celebrar los quinceaños de','Sara Elena']
-            texto.forEach(t => new crearSpanAnimation( t, '#cuarto') );
-        
-        
-        (()=>{
-        const section_cuarto = document.querySelector('#cuarto');
-        const fotos = document.createElement('div')
-        fotos.innerHTML = `
+    static calcularTiempoRestante() {
+        const fechaObjetivo = new Date('2024-09-28T00:00:00');
+        const fechaActual = new Date();
+    
+        const diferencia = fechaObjetivo - fechaActual;
+        const segundosRestantes = Math.floor(diferencia / 1000);
+    
+        const segundos = segundosRestantes % 60;
+        const minutos = Math.floor(segundosRestantes / 60) % 60;
+        const horas = Math.floor(segundosRestantes / 3600) % 24;
+        const dias = Math.floor(segundosRestantes / 86400);
+    
+        return { dias, horas, minutos, segundos };
+    }
+    
+    static mostrarContador() {
+        const tiempoRestante = Util.calcularTiempoRestante();
+        console.log(`Faltan ${tiempoRestante.dias} días, ${tiempoRestante.horas} horas, ${tiempoRestante.minutos} minutos y ${tiempoRestante.segundos} segundos para el 28 de septiembre de 2024.`);
+    }
+    
+
+    
+
+    static crearSectionCuatro() {
+        let texto = ['Yazmin Díaz  &', ' Rodrigo Rodriguez',
+            'invitam a celebrar los quinceaños de', 'Sara Elena']
+        texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
+
+
+        (() => {
+            const section_cuarto = document.querySelector('#cuarto');
+            const fotos = document.createElement('div')
+            fotos.innerHTML = `
                 <img src="./img/1/sara_bb-compress.webp" >
                     <img src="./img/1/sara_jr-compress.webp" >
                     <img src="./img/1/sara_coqueta-compress.webp" >
         `
-        section_cuarto.appendChild(fotos)
-        })()
-        }
+            section_cuarto.appendChild(fotos)
+        })();
+
+        texto = ['28-Septiembre-2024', '7:00 p.m.']
+
+        texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
+    }
 
     static scrollFx() {
         const divs = document.querySelectorAll(".desaparecer");
