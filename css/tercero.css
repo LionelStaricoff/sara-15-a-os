@@ -1,9 +1,6 @@
 
 
-@font-face {
-    font-family: 'EBGaramond';
-    src: url('../font/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-}
+
 
 #tercero {
     display: grid;
@@ -19,7 +16,7 @@
     margin: 1em;
     padding: 8em 0;
     p {
-        font-family: 'EBGaramond', 'Amoresa', Arial, sans-serif;
+        font-family: 'EBGaramond', Arial, sans-serif;
         font-weight: bold;
         padding-bottom: 1em;
         &:nth-child(1){

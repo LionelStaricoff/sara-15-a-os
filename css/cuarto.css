@@ -80,7 +80,8 @@
             top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-weight: 900;
+            font-family: 'EBGaramond', Arial, sans-serif;
+            font-weight: bolder;
             font-size: 2em;
             text-shadow: 1px 1px 1px;
             display: grid;
@@ -90,7 +91,7 @@
             width: 100%;
             
           i{
-            padding-right: 1em;
+            padding-right: 0.7em;
             border-radius: 50%;
             background-color: rgb(240, 255, 255,0.5);
             text-shadow: 3px 3px 3px;

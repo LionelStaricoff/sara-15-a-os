@@ -19,7 +19,10 @@
     src: url('../font/amoresa-Font/Andrey\ Sharonov\ -\ Amoresa\ Regular.otf') format('truetype');
 }
 
-
+@font-face {
+    font-family: 'EBGaramond';
+    src: url('../font/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+}
 
 main {
     height: 100%;
