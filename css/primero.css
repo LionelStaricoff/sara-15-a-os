@@ -64,7 +64,7 @@
         animation: desdeArriba 2s ease-in-out forwards;
         
 
-        background-image: url('../img/1/letra_s.png');
+        background-image: url('../img/1/letra_s-compress.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -90,7 +90,7 @@
 
         div:nth-child(1) {
             height: 100%;
-            background-image: url('../img/1/reja_d.png');
+            background-image: url('../img/1/reja_d-compress.webp');
             background-position: right top;
             background-repeat: no-repeat;
             background-size: 180%;
@@ -100,7 +100,7 @@
 
         div:nth-child(2) {
             height: 100%;
-            background-image: url('../img/1/reja_i.png');
+            background-image: url('../img/1/reja_i-compress.webp');
             background-position: right top;
             background-repeat: no-repeat;
             background-size: 180%;

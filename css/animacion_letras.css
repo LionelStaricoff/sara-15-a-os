@@ -8,7 +8,7 @@
 
 
     border: black 50px solid;
-    border-image-source: url("../img/1/flores.png");
+    border-image-source: url("../img/1/flores.webp");
 
     border-image-repeat: round;
     border-image-slice: 150;
