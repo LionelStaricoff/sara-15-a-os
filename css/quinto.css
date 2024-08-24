@@ -1,0 +1,12 @@
+#quinto{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: .6em;
+
+    img{
+        width: 15em;
+    }
+
+}

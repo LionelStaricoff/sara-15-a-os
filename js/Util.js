@@ -77,6 +77,27 @@ export class Util {
 
     }
 
+
+   static crearSectionQuinto(){
+        let texto = ['Lugar:', 'Los Alpes Social Hall','Salón de eventos',
+            'Somedyt']
+        texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
+
+        // <img src="./img/1/mapa.webp">
+        (()=>{
+            const img = document.createElement('img')
+            img.src = './img/1/mapa.webp';
+            document.querySelector('#quinto').appendChild(img);
+        })();
+
+        texto = ['Codigo de Vestimenta', 'Hombres: Guayabera blanca','Mujer: Vestido largo',
+            'lluvia de sobres']
+        texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
+
+        document.querySelector('#quinto').innerHTML += ` <p id="cupo">Cupo (   ) <br>
+                Confirme aqui antes del 5 de septimbre </p>`
+    }
+
     static scrollFx() {
         const divs = document.querySelectorAll(".desaparecer");
         divs.forEach(div => {
