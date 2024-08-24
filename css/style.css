@@ -31,17 +31,22 @@ main {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     transition: all 2s;
+    justify-content: center;
+    align-content: center;
    
+
+ 
 
 
 }
 
 section {
     height: 100vh;
-    width: 100vw;
+    width: min(50em,100%);
 
 }
 
