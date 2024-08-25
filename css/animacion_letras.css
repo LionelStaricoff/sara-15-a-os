@@ -2,21 +2,34 @@
     display: grid;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
-    gap: 20px;
+
     text-align: center;
-    padding-top: 5em;
+
 
 
     border: black 50px solid;
     border-image-source: url("../img/1/flores.webp");
-
     border-image-repeat: round;
-    /* border-image-slice: 150; */
     border-image-repeat: space;
     border-image-width: 15%;
     margin: 1em;
-    padding: 10em 0;
+    padding: 10em 50em;
 
+    span{
+        &:nth-child(5){  
+          padding-left: 28px;
+           }
+        
+   
+        &:nth-child(9){
+        padding-left: 28px;
+       
+       }
+       &:nth-child(12){
+        margin-right: 10px;
+       
+       }
+    }
 
 }
 
@@ -24,12 +37,13 @@
     font-family: 'amoresa';
     font-weight: bolder;
     font-size: 2em;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     opacity: 0;
     transform: translateX(100%);
     animation: slideIn  forwards;
     height: fit-content;
+ 
 }
 
 /* Animación para cada letra */
