@@ -90,8 +90,8 @@ export class Util {
             document.querySelector('#quinto').appendChild(img);
         })();
 
-        texto = ['Codigo de Vestimenta', 'Hombres: Guayabera blanca','Mujer: Vestido largo',
-            'lluvia de sobres']
+        texto = ['Código de vestimenta', 'Hombres: Guayabera blanca','Mujer: Vestido largo',
+            'Lluvia de sobres']
         texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
 
         document.querySelector('#quinto').innerHTML += ` <p id="cupo">Cupo (   ) <br>

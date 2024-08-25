@@ -17,32 +17,40 @@
     }
     div:nth-child(5) {
         position: relative;
+     
     }
     div:nth-child(5)::after {
         content: "";
         display: inline-block;
         background-image: url('../img/1/adornoariiba-compress.webp');
-        background-size: 50px 50px;
-        width: 100%;
+        background-size: 200px 50px;
+        width: 50%;
         height: 50px;
         position: absolute;
-        transform: translate(-400px, 120px);
+        transform: translate(-300px, 120px);
+    }
+
+    div:nth-child(6) {
+       
+       padding-top: 1em;
+
     }
 
     div:nth-child(7) {
         position: relative;
+        padding-bottom: 1em;
     }
 
     div:nth-child(7)::after {
         content: "";
         display: inline-block;
         background-image: url('../img/1/adornoabajo-compress.webp');
-        background-size: 50px 50px;
-        width: 100%;
+        background-size: 200px 50px;
+        width: 50%;
         height: 50px;
         position: absolute;
-        transform: translate(-240px,6px);
-   
+        transform: translate(-140px,10px);
+      
     }
 
     img {
@@ -74,9 +82,9 @@
             position: absolute;
             top: 20%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: 'EBGaramond', Arial, sans-serif;
-            font-weight: bolder;
+            transform: translate(-50%, -20%);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
             font-size: 2em;
             text-shadow: 1px 1px 1px;
             display: grid;
@@ -87,10 +95,10 @@
     
             
           i{
-            padding-right: 0.7em;
+            /* padding-right: 0.7em; */
             border-radius: 50%;
-            background-color: rgb(240, 255, 255,0.5);
-            text-shadow: 3px 3px 3px;
+            /* background-color: rgb(240, 255, 255,0.5);
+            text-shadow: 3px 3px 3px; */
           }
         }
         span {
