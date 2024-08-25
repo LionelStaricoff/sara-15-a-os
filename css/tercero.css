@@ -11,25 +11,26 @@
     border-image-width: 50%; */
     margin: 1em;
     padding: 7em 0;
+    justify-items: center;
 
     p {
         font-family: 'EBGaramond', Arial, sans-serif;
         font-weight: bold;
         font-size: 1.2em;
-        margin-bottom: 2em;
-        padding: 1em 2em;
+        padding: 0.5em 2em;
 
 
         &:nth-child(1) {
-            animation-delay: 0.1s
+            animation-delay: 0.1s;
+           /* transform: translateY(); */
         }
 
         &:nth-child(2) {
-            animation-delay: 0.3s
+            animation-delay: 0.3s;
         }
 
         &:nth-child(3) {
-            animation-delay: 0.5s
+            animation-delay: 0.5s;
         }
     }
 
@@ -38,7 +39,8 @@
         border-radius: 50%;
         animation-delay: 0.6s;
         margin-left: 1em;
-       
+        margin-top: 3em;
+      
     }
    
 }
