@@ -1,15 +1,70 @@
-#quinto{
+
+#quinto {
     display: grid;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     font-size: .6em;
+ 
 
-    img{
-        width: 15em;
-        
+
+    img {
+        width: 30em;
+        display: inline-block;
+        margin: 0 auto;
+
     }
 
+    span{
+        font-family: 'EBGaramond', Arial, sans-serif;
+      
+    }
 
+    div {
+        position: relative;
+
+
+        &:nth-child(1) {
+            font-size: 1.5em;
+            span{
+                font-family: 'Amoresa';
+            }
+           
+
+            &::after {
+                content: "";
+                display: inline-block;
+                background-image: url('../img/1/adornoariiba-compress.webp');
+                background-size: 220px 50px;
+                width: 90%;
+                height: 50px;
+                position: absolute;
+                transform: translate(-150px, -40px);
+            }
+        }
+
+        &:nth-child(2) {
+            transform: translateY(-10px);
+        }
+
+        &:nth-child(3) {
+            transform: translateY(-30px);
+        }
+
+        &:nth-child(4) {
+            transform: translateY(-55px);
+
+            &::after {
+                content: "";
+                display: inline-block;
+                background-image: url('../img/1/adornoabajo-compress.webp');
+                background-size: 250px 50px;
+                width: 90%;
+                height: 50px;
+                position: absolute;
+                transform: translate(-150px, 30px);
+            }
+        }
+    }
 
 }

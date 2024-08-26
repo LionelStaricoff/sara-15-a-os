@@ -57,27 +57,7 @@ section {
 
 }
 
-/* section::after {
-    content: "";
-    display: block;
-    background-image: url('../img/1/fondo2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
 
-} */
-
-
-    /* background-image: url('../img/1/adornoabajo-compress.webp');
-    background-size: 200px 50px;
-    width: 50%;
-    height: 50px;
-    position: absolute;
-    transform: translate(-140px,10px); */
-  
 
 
 
