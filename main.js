@@ -11,3 +11,5 @@ setInterval(Util.mostrarContador, 1000);
 
  Util.crearSectionQuinto();
 
+ Util.crearSectionSeis();
+

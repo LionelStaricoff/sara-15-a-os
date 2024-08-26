@@ -55,9 +55,15 @@ export class Util {
 
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
-        /*contador de fecha
+       
+
+    }
+
+
+    static crearSectionSeis(){
+         // de fecha
         (() => {
-            const section_cuarto = document.querySelector('#cuarto');
+            const section_cuarto = document.querySelector('#sexto');
            
             const contador = document.createElement('div')
             contador.classList = 'contador';
@@ -76,8 +82,7 @@ export class Util {
                 <span class="counter"></span>
 `
             section_cuarto.appendChild(contador)
-        })();*/
-
+        })();
     }
 
 
