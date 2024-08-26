@@ -32,7 +32,10 @@ export class Util {
 
 
     static crearSectionCuatro() {
-        let texto = ['Yazmin Díaz  &', ' Rodrigo Rodriguez',
+        let texto = ['Sus padres']
+        texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
+
+         texto = ['Yazmin Díaz  &', ' Rodrigo Rodriguez',
             'invitam a celebrar los quinceaños de', 'Sara Elena']
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
@@ -43,7 +46,7 @@ export class Util {
             fotos.innerHTML = `
                 <img src="./img/1/sara_bb-compress.webp" >
                     <img src="./img/1/sara_jr-compress.webp" >
-                    <img src="./img/1/sara_coqueta-compress.webp" >
+                    <img src="./img/1/sara_vaile_2.webp" >
         `
             section_cuarto.appendChild(fotos)
         })();
@@ -52,7 +55,7 @@ export class Util {
 
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
-        //contador de fecha
+        /*contador de fecha
         (() => {
             const section_cuarto = document.querySelector('#cuarto');
            
@@ -73,7 +76,7 @@ export class Util {
                 <span class="counter"></span>
 `
             section_cuarto.appendChild(contador)
-        })();
+        })();*/
 
     }
 

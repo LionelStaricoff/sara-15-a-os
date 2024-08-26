@@ -11,15 +11,19 @@
     font-family: 'amoresa', Arial, Helvetica, sans-serif;
     font-size: .5em;
     padding: 10em 0 0 0;
+
+    div:nth-child(2), div:nth-child(3){
+        font-size: 1.5em;
+    }
   
-    div:nth-child(4) {
+    div:nth-child(5) {
         font-size: 2em;
     }
-    div:nth-child(5) {
+    div:nth-child(6) {
         position: relative;
      
     }
-    div:nth-child(5)::after {
+    div:nth-child(6)::after {
         content: "";
         display: inline-block;
         background-image: url('../img/1/adornoariiba-compress.webp');
@@ -30,7 +34,7 @@
         transform: translate(-300px, 120px);
     }
 
-    div:nth-child(6) {
+    div:nth-child(7) {
        
        padding-top: 1em;
 
@@ -41,7 +45,7 @@
         padding-bottom: 1em;
     }
 
-    div:nth-child(7)::after {
+    div:nth-child(8)::after {
         content: "";
         display: inline-block;
         background-image: url('../img/1/adornoabajo-compress.webp');
@@ -61,52 +65,5 @@
       margin: 0.5em;
     }
 
-    .contador {
-        width: 25em;
-        height: 12em;
-        border: solid 5px rgb(245, 202, 34, 0.8);
-        margin: 0 auto;
-        /* background-image: url('../img/1/corazones-compress.webp');
-        background-position: center;
-        background-repeat: repeat;
-        background-size: 20%; */
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-        gap: 20px;
-        align-items: end;
-        padding: 0 0.5em 0.5em 0.5em;
-        position: relative;
-        margin-top: 0.5em;
-
-        .texto_flotante {
-            position: absolute;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -20%);
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: bold;
-            font-size: 2em;
-            text-shadow: 1px 1px 1px;
-            display: grid;
-            grid-template-columns: repeat(4,auto);
-            text-align: center;
-        
-            width: 100%;
-    
-            
-          i{
-            /* padding-right: 0.7em; */
-            border-radius: 50%;
-            /* background-color: rgb(240, 255, 255,0.5);
-            text-shadow: 3px 3px 3px; */
-          }
-        }
-        span {
-            border: solid 3px rgb(51, 51, 51, 0.9);
-            background-color: rgb(222, 184, 135, 0.9);
-            height: 50%;
-            width: 1.8em;
-            
-        }
-    }
+   
 }

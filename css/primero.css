@@ -66,15 +66,17 @@
         animation: desdeArriba 2s ease-in-out forwards;
         
 
-        background-image: url('../img/1/letra_s-compress.webp');
+        background-image: url('../img/1/letra_s.png');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 50%;
         filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 
+        text-align: center;
+
         img {
-            width: 20em;
-            height: 25em;
+            width: 10em;
+         
             animation: desdeArriba_izquierda 2.5s ease-in-out forwards;
             filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 
@@ -86,6 +88,7 @@
         position: absolute;
         display: grid;
         grid-template-columns: auto auto;
+        overflow: visible;
 
         width: 100%;
         height: 100%;
@@ -93,22 +96,24 @@
 
         div:nth-child(1) {
             height: 100%;
-            background-image: url('../img/1/reja_d-compress.webp');
+            background-image: url('../img/1/reja_d.png');
             background-position: right top;
             background-repeat: no-repeat;
-            background-size: 180%;
+            background-size: 120%;
             animation: reja_izquierda 2.2s ease-in-out forwards;
             filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
         }
 
         div:nth-child(2) {
             height: 100%;
-            background-image: url('../img/1/reja_i-compress.webp');
+            background-image: url('../img/1/reja_d.png');
             background-position: right top;
             background-repeat: no-repeat;
-            background-size: 180%;
+            background-size: 120%;
             animation: reja_derecha 2.2s ease-in-out forwards;
             filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+            overflow: visible;
+            transform: rotateX(100deg);
 
         }
     }
