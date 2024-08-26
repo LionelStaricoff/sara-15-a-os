@@ -45,8 +45,8 @@ export class Util {
             const fotos = document.createElement('div')
             fotos.innerHTML = `
                 <img src="./img/1/sara_bb-compress.webp" >
-                    <img src="./img/1/sara_img_2.jpg" >
-                    <img src="./img/1/sara_img_3.jpg" >
+                    <img src="./img/1/sara_img_2-compress.webp" >
+                    <img src="./img/1/sara_img_3-compress.webp" >
         `
             section_cuarto.appendChild(fotos)
         })();
