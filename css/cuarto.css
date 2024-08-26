@@ -27,42 +27,48 @@
         content: "";
         display: inline-block;
         background-image: url('../img/1/adornoariiba-compress.webp');
-        background-size: 200px 50px;
-        width: 50%;
+        background-size: 220px 50px;
+        width: 60%;
         height: 50px;
         position: absolute;
-        transform: translate(-300px, 120px);
+        transform: translate(-300px, 160px);
     }
 
-    div:nth-child(7) {
-       
-       padding-top: 1em;
-
-    }
+ 
 
     div:nth-child(7) {
         position: relative;
-        padding-bottom: 1em;
+       margin-top: 5em;
+    }
+
+    div:nth-child(8) {
+        position: relative;
+        transform: translateY(-30px);
     }
 
     div:nth-child(8)::after {
         content: "";
         display: inline-block;
         background-image: url('../img/1/adornoabajo-compress.webp');
-        background-size: 200px 50px;
-        width: 50%;
+        background-size: 250px 50px;
+        width: 60%;
         height: 50px;
         position: absolute;
         transform: translate(-140px,10px);
       
     }
 
+ 
+
     img {
         width: 15em;
         border-radius: 50%;
-        object-fit: 100%;
+        object-fit: cover;
         height: 16em;
       margin: 0.5em;
+      border: solid 5px #333;
+
+  
     }
 
    
