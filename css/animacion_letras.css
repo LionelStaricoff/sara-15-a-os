@@ -12,7 +12,7 @@
     border-image-repeat: space;
     border-image-width: 15%;
     margin: 1em;
-    padding: 10em 50em;
+    /* padding: 10em 50em; */
 
     span{
         &:nth-child(5){  
