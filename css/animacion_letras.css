@@ -6,28 +6,49 @@
 
 
 
-    border: black 50px solid;
-    border-image-source: url("../img/1/flores.webp");
+    border: black 30px solid;
+    border-image-source: url("../img/1/arabesco_esquina.webp");
     border-image-repeat: round;
-    border-image-repeat: space;
     border-image-width: 15%;
-    margin: 1em;
+    border-image-slice: 50%;
+    border-image-outset: 0;
+    margin: 1.5em;
+    /* margin: 1em; */
     /* padding: 10em 50em; */
 
-    span{
-        &:nth-child(5){  
-          padding-left: 28px;
-           }
-        
-   
-        &:nth-child(9){
-        padding-left: 28px;
-       
-       }
-       &:nth-child(12){
-        margin-right: 10px;
-       
-       }
+    span {
+        &:nth-child(5) {
+            padding-left: 28px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+
+            padding-top: 5em;
+
+        }
+
+        &:nth-child(9) {
+            padding-left: 28px;
+
+        }
+
+        &:nth-child(12) {
+            margin-right: 10px;
+
+        }
+
+        &:nth-child(13),
+        &:nth-child(14),
+        &:nth-child(15),
+        &:nth-child(16) {
+
+            padding-bottom: 5em;
+
+
+        }
     }
 
 }
@@ -40,9 +61,9 @@
     white-space: nowrap;
     opacity: 0;
     transform: translateX(100%);
-    animation: slideIn  forwards;
+    animation: slideIn forwards;
     height: fit-content;
- 
+
 }
 
 /* Animación para cada letra */
