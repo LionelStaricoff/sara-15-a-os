@@ -93,9 +93,15 @@ export class Util {
 
         // <img src="./img/1/mapa.webp">
         (()=>{
+            const a =  document.createElement('a');
+            a.href="https://maps.app.goo.gl/Xv2Vh33bBAr4rkii9?g_st=aw";
+            a.target="_blank";
+
             const img = document.createElement('img')
             img.src = './img/1/mapa.webp';
-            document.querySelector('#quinto').appendChild(img);
+
+            a.appendChild(img)
+            document.querySelector('#quinto').appendChild(a);
         })();
 
         texto = ['Código de vestimenta', 'Hombres: Guayabera blanca','Mujer: Vestido largo',
@@ -103,7 +109,7 @@ export class Util {
         texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
 
         document.querySelector('#quinto').innerHTML += ` <p id="cupo">Cupo (   ) <br>
-                Confirme aqui antes del 5 de septimbre </p>`
+                Confirme aqui antes del 5 de septimbre  </p>`
     }
 
     static scrollFx() {
