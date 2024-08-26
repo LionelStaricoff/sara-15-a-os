@@ -29,10 +29,11 @@
 main {
     height: 100%;
     width: 100%;
-    /* background-image: url('../img/1/fondo2-compress.webp');
+    background-image: url('../img/1/fondo2.jpg');
     background-position: center;
-    background-repeat: repeat;
-    background-size: cover; */
+    background-repeat: repeat-x;
+    background-size: contain ;
+    background-attachment: fixed;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -52,24 +53,22 @@ section {
     width: min(600px,100%);
     position: relative;
  
-    &:first-child{
-        width: 100vw;
-    }
+  
 
 }
 
-section::after {
+/* section::after {
     content: "";
-    display: inline-block;
+    display: block;
     background-image: url('../img/1/fondo2.jpg');
     background-repeat: no-repeat;
-    background-size: 600px 800px;
-    position: fixed;
+    background-size: cover;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     z-index: -1;
 
-
+} */
 
 
     /* background-image: url('../img/1/adornoabajo-compress.webp');
@@ -79,6 +78,6 @@ section::after {
     position: absolute;
     transform: translate(-140px,10px); */
   
-}
+
 
 
