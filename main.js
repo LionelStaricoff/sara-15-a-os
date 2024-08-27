@@ -23,8 +23,13 @@ try {
         f1.unaPersona();
     })
 
+    
+     /**
+         * efecto agrandar imagenes de la galeria
+         */
+     Util.agrandarImagen();
+
 } catch (error) {
     console.error(error)
 }
-
 

@@ -35,7 +35,7 @@ export class Util {
         let texto = ['Sus padres']
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
-         texto = ['Yazmin Díaz  &', ' Rodrigo Rodriguez',
+        texto = ['Yazmin Díaz  &', ' Rodrigo Rodriguez',
             'invitam a celebrar los quinceaños de', 'Sara Elena']
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
@@ -55,20 +55,20 @@ export class Util {
 
         texto.forEach(t => new crearSpanAnimation(t, '#cuarto'));
 
-       
+
 
     }
 
 
-    static crearSectionSeis(){
+    static crearSectionSeis() {
 
-        let texto = ['28 | Septiembren | 2024', 'Para este gran sueño','Tan solo faltan']
+        let texto = ['28 | Septiembren | 2024', 'Para este gran sueño', 'Tan solo faltan']
         texto.forEach(t => new crearSpanAnimation(t, '#sexto'));
 
-         // de fecha
+        // de fecha
         (() => {
             const section_cuarto = document.querySelector('#sexto');
-           
+
             const contador = document.createElement('div')
             contador.classList = 'contador';
             contador.innerHTML = `
@@ -88,16 +88,16 @@ export class Util {
     }
 
 
-   static crearSectionQuinto(){
-        let texto = ['Lugar:', 'Los Alpes Social Hall','Salón de eventos',
+    static crearSectionQuinto() {
+        let texto = ['Lugar:', 'Los Alpes Social Hall', 'Salón de eventos',
             'Somedyt']
         texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
 
         // <img src="./img/1/mapa.webp">
-        (()=>{
-            const a =  document.createElement('a');
-            a.href="https://maps.app.goo.gl/Xv2Vh33bBAr4rkii9?g_st=aw";
-            a.target="_blank";
+        (() => {
+            const a = document.createElement('a');
+            a.href = "https://maps.app.goo.gl/Xv2Vh33bBAr4rkii9?g_st=aw";
+            a.target = "_blank";
 
             const img = document.createElement('img')
             img.src = './img/1/mapa.webp';
@@ -105,11 +105,11 @@ export class Util {
             const punteroImg = document.createElement('img')
             punteroImg.src = './img/1/puntero-compress.webp';
 
-            a.append( punteroImg ,img)
+            a.append(punteroImg, img)
             document.querySelector('#quinto').appendChild(a);
         })();
 
-        texto = ['Código de vestimenta', 'Hombres: Guayabera blanca','Mujer: Vestido largo',
+        texto = ['Código de vestimenta', 'Hombres: Guayabera blanca', 'Mujer: Vestido largo',
             'Lluvia de sobres']
         texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
 
@@ -159,6 +159,12 @@ export class Util {
 
     }
 
+    static agrandarImagen() {
+        const imgs = document.querySelectorAll('.imagen_galeria');
+        imgs.forEach(i => 
 
+        i.addEventListener("click", () => 
+            i.classList.toggle("expanded") ) )
+    }
 
 }
