@@ -1,11 +1,12 @@
 import { Util } from './js/Util.js'
-import {Formulario} from './js/formulario.js';
+import { Formulario } from './js/formulario.js';
 
 
 
 try {
     document.addEventListener("scroll", () => { Util.scrollFx(); });
-
+   // const f1 = new Formulario(null, '573113840944');
+   // f1.unaPersona();
 
     Util.crearSectionCuatro();
     // Actualizar contador cada segundo
@@ -18,8 +19,8 @@ try {
 
     const cupo = document.querySelector('#cupo');
     cupo.addEventListener('click', () => {
-          const f1 = new Formulario(null,'573113840944');
-   f1.unaPersona();
+        const f1 = new Formulario(null, '573113840944');
+        f1.unaPersona();
     })
 
 } catch (error) {
