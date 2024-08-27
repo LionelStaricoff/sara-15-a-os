@@ -5,7 +5,8 @@ import {Formulario} from './js/formulario.js';
 
 try {
     document.addEventListener("scroll", () => { Util.scrollFx(); });
-    new Formulario('#primero')
+   const f1 = new Formulario('#primero');
+   f1.unaPersona();
 
     Util.crearSectionCuatro();
     // Actualizar contador cada segundo
