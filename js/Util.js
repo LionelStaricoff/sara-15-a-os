@@ -100,7 +100,10 @@ export class Util {
             const img = document.createElement('img')
             img.src = './img/1/mapa.webp';
 
-            a.appendChild(img)
+            const punteroImg = document.createElement('img')
+            punteroImg.src = './img/1/puntero-compress.webp';
+
+            a.append( punteroImg ,img)
             document.querySelector('#quinto').appendChild(a);
         })();
 
