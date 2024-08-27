@@ -20,5 +20,20 @@ export class Formulario {
         this._padre.appendChild( this._fondo)
     }
 
+    enviarMensaje(){
+        const numero = this._whatsApp;
+        const nombre = document.getElementById("nombre").value;
+        const mensaje = document.getElementById("mensaje").value;
+
+        // Codifica el mensaje para la URL
+        const mensajeCodificado = encodeURIComponent(`confirmo invitacion ${mensaje}`);
+
+        // Crea el enlace de WhatsApp
+        const enlaceWhatsApp = `https://wa.me/${numero}?text=${mensajeCodificado}`;
+
+        // Abre WhatsApp en una nueva ventana
+        window.open(enlaceWhatsApp);
+    }
+
 
 }

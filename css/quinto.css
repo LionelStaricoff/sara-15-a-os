@@ -99,7 +99,7 @@
         &:nth-child(8) {
             transform: translateY(-30px);
 
-            &::after {
+            /* &::after {
                 content: "";
                 display: inline-block;
                 background-image: url('../img/1/adornoabajo-compress.webp');
@@ -109,15 +109,21 @@
                 position: absolute;
                 transform: translate(-230px, 10px);
 
-            }
+            } */
         }
 
         &:nth-child(9) {
-
+            position: relative;
             font-size: 1.1em;
+            transform: translate(0px, -10px);
+          
 
             span {
                 font-family: 'Amoresa';
+            
+              
+                color: #333;
+                text-shadow: 3px 3px 3px goldenrod;
             }
 
             &::after {
@@ -128,7 +134,7 @@
                 width: 100%;
                 height: 50px;
                 position: absolute;
-                transform: translate(-230px, -30px);
+                transform: translate(-230px, -40px);
 
             }
 
@@ -159,7 +165,7 @@
 
 
 
-        &::after {
+        /* &::after {
             content: "";
             display: inline-block;
             background-image: url('../img/1/adornoariiba-compress.webp');
@@ -169,7 +175,7 @@
             position: absolute;
             transform: translate(-300px, -70px);
 
-        }
+        } */
 
         &::before {
             content: "";
@@ -179,7 +185,7 @@
             width: 55%;
             height: 50px;
             position: absolute;
-            transform: translate(-90px, 60px);
+            transform: translate(-110px, 60px);
 
         }
     }
