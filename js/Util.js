@@ -72,18 +72,16 @@ export class Util {
             const contador = document.createElement('div')
             contador.classList = 'contador';
             contador.innerHTML = `
-           <div class="texto_flotante">
-                <i>D</i>
-                <i>H</i>
-                <i>M</i>
-                <i>S</i>
-            </div>
-             
 
                 <span class="counter"></span>
                 <span class="counter"></span>
                 <span class="counter"></span>
                 <span class="counter"></span>
+
+                 <i>Días</i>
+                <i>Horas</i>
+                <i>Minutos</i>
+                <i>Segundos</i>
 `
             section_cuarto.appendChild(contador)
         })();
