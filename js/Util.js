@@ -61,6 +61,10 @@ export class Util {
 
 
     static crearSectionSeis(){
+
+        let texto = ['28 | Septiembren | 2024', 'Para este gran sueño','Tan solo faltan']
+        texto.forEach(t => new crearSpanAnimation(t, '#sexto'));
+
          // de fecha
         (() => {
             const section_cuarto = document.querySelector('#sexto');

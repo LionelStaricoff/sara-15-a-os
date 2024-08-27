@@ -1,7 +1,31 @@
+#sexto {
 
+  display: grid;
+  justify-content: space-around;
+  color: #333;
+text-align: center;
 
+  div:nth-child(1){
+    font-size: 0.7em;
+    margin-top:3em;
+    span{
+      font-family: 'EBGaramond';
+      font-weight: 300;
+    }
+    
+  }
 
-.contador {
+  div:nth-child(2){
+    font-size: 0.8em;
+    margin-top: 1.5em;
+    span{
+      font-family: 'EBGaramond';
+      font-weight: 400;
+    }
+    
+  }
+
+  .contador {
     width: 25em;
     height: 12em;
     border: solid 5px rgb(245, 202, 34, 0.8);
@@ -19,33 +43,36 @@
     margin-top: 0.5em;
 
     .texto_flotante {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bold;
-        font-size: 2em;
-        text-shadow: 1px 1px 1px;
-        display: grid;
-        grid-template-columns: repeat(4,auto);
-        text-align: center;
-    
-        width: 100%;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 2em;
+      text-shadow: 1px 1px 1px;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      text-align: center;
 
-        
-      i{
+      width: 100%;
+
+
+      i {
         /* padding-right: 0.7em; */
         border-radius: 50%;
         /* background-color: rgb(240, 255, 255,0.5);
         text-shadow: 3px 3px 3px; */
       }
     }
+
     span {
-        border: solid 3px rgb(51, 51, 51, 0.9);
-        background-color: rgb(222, 184, 135, 0.9);
-        height: 50%;
-        width: 1.8em;
-        
+      border: solid 3px rgb(51, 51, 51, 0.9);
+      background-color: rgb(222, 184, 135, 0.9);
+      height: 50%;
+      width: 1.8em;
+
     }
+  }
+
 }
