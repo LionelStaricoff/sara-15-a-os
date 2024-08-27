@@ -17,7 +17,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 @font-face {
     font-family: 'amoresa';
@@ -30,13 +33,12 @@
 }
 
 main {
-    height: 100%;
-    width: 100%;
+
     background-image: url('../img/1/fondo2.jpg');
-    background-position: center;
-    background-repeat: repeat-x;
-    background-size: contain ;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -44,6 +46,8 @@ main {
     justify-content: center;
     align-content: center;
    
+      min-height: 100%;
+
 
  
 
