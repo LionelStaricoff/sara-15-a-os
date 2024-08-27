@@ -1,8 +1,5 @@
 #cuarto {
-    /* background-image: url('../img/1/flores.webp');
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover; */
+
 
     display: grid;
     justify-content: space-around;
@@ -12,17 +9,20 @@
     font-size: .5em;
     padding: 10em 0 0 0;
 
-    div:nth-child(2), div:nth-child(3){
+    div:nth-child(2),
+    div:nth-child(3) {
         font-size: 1.5em;
     }
-  
+
     div:nth-child(5) {
         font-size: 2em;
     }
+
     div:nth-child(6) {
         position: relative;
-     
+
     }
+
     div:nth-child(6)::after {
         content: "";
         display: inline-block;
@@ -31,14 +31,14 @@
         width: 60%;
         height: 50px;
         position: absolute;
-        transform: translate(-300px, 160px);
+        transform: translate(80px, 160px);
     }
 
- 
+
 
     div:nth-child(7) {
         position: relative;
-       margin-top: 5em;
+        margin-top: 5em;
     }
 
     div:nth-child(8) {
@@ -54,22 +54,26 @@
         width: 60%;
         height: 50px;
         position: absolute;
-        transform: translate(-140px,10px);
-      
+        transform: translate(-140px, 10px);
+
     }
 
- 
+    div:nth-child(6) {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
 
-    img {
-        width: 15em;
-        border-radius: 50%;
-        object-fit: cover;
-        height: 16em;
-      margin: 0.5em;
-      border: solid 5px #333;
-
-  
+        img {
+            width: 15em;
+            border-radius: 50%;
+            object-fit: cover;
+            height: 16em;
+            margin: 0.5em;
+            border: solid 5px #333;
+        }
     }
 
-   
+
+
+
+
 }
