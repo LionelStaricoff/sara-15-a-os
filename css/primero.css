@@ -121,5 +121,7 @@
         height: 3em;
         object-fit: cover;
         filter: sepia(200%) contrast(200%);
+        margin: 0 auto;
+       
     }
 }
