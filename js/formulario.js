@@ -95,7 +95,7 @@ border-radius: 25px;
     text-align: center;
     place-items: center;
     gap: 20px;
-    opacity: 0.9;
+
     border: solid 3px #333;
     
 
@@ -159,7 +159,7 @@ border-radius: 25px;
     text-align: center;
     place-items: center;
     gap: 20px;
-    opacity: 0.9;
+ 
     border: solid 3px #333;
     
 
@@ -223,7 +223,7 @@ border-radius: 25px;
     text-align: center;
     place-items: center;
     gap: 20px;
-    opacity: 0.9;
+
     border: solid 3px #333;
     
 
@@ -289,7 +289,7 @@ border-radius: 25px;
     text-align: center;
     place-items: center;
     gap: 20px;
-    opacity: 0.9;
+
     border: solid 3px #333;
     
 
