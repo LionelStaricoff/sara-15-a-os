@@ -29,6 +29,22 @@ try {
          */
      Util.agrandarImagen();
 
+
+     /**
+      * audio
+      */
+   
+
+    document.querySelector('body').addEventListener('click', function() {
+        globalThis.inicioAudio = true;
+        if( globalThis.inicioAudio){
+            const audio = document.querySelector('audio');
+            audio.play();
+            globalThis.inicioAudio = false;
+        }
+       
+    });
+
 } catch (error) {
     console.error(error)
 }

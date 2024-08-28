@@ -57,7 +57,7 @@
     display: grid;
     place-content: center;
     position: relative;
-
+    text-align: center;
 
 
     .s {
@@ -114,5 +114,12 @@
             transform: rotateX(100deg);
 
         }
+    }
+
+    .audio {
+        width: 3em;
+        height: 3em;
+        object-fit: cover;
+        filter: sepia(200%) contrast(200%);
     }
 }
