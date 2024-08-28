@@ -167,4 +167,19 @@ export class Util {
             i.classList.toggle("expanded") ) )
     }
 
+
+    static play() {
+        if (!globalThis.inicioAudio) globalThis.inicioAudio = true;
+        if (globalThis.inicioAudio) {
+            const img = document.querySelector('.audio');
+            img.src = './img/1/pause-compress.webp';
+            const audio = document.querySelector('audio');
+            audio.play();
+
+            audio.volume = 0.15;
+            globalThis.inicioAudio = false;
+        }
+
+    }
+
 }

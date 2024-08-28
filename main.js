@@ -32,45 +32,31 @@ try {
 
     /**
      * audio
-     */
+   
 
 
-    document.querySelector('body').addEventListener('click', function () {
-        if (!globalThis.inicioAudio) globalThis.inicioAudio = true;
-        if (globalThis.inicioAudio) {
-            const img = document.querySelector('.audio');
-            img.src = './img/1/pause-compress.webp';
-            const audio = document.querySelector('audio');
-            audio.play();
-
-            audio.volume = 0.15;
-            globalThis.inicioAudio = false;
-        }
-
-    });
+     document.addEventListener('scroll', ()=>{
+        Util.play();
+        this.removeEventListener('scroll', Util.play());
+    
+    } );  */
 
     document.querySelector('#play').addEventListener('click', () => {
 
-        if (!globalThis.inicioAudioPause == undefined) globalThis.inicioAudioPause = true;
+      
 
+        const controlButton = document.querySelector('.audio');
+        const audio = document.querySelector('audio');
 
-
-        if (globalThis.inicioAudioPause) {
-
-            const img = document.querySelector('.audio');
-            const audio = document.querySelector('audio');
-            img.src = './img/1/play-compress.webp';
-            console.log(img.src)
-            audio.pause();
-            globalThis.inicioAudioPause = false;
-        } else {
-            const img = document.querySelector('.audio');
-            const audio = document.querySelector('audio');
-
-            img.src = './img/1/pause-compress.webp'
-            console.log(img.src)
+        if (audio.paused) {
+            audio.volume = 0.5;
             audio.play();
-            globalThis.inicioAudioPause = true;
+            controlButton.src =  './img/1/pause-compress.webp';
+            controlButton.alt = 'Pause';
+        } else {
+            audio.pause();
+            controlButton.src = './img/1/play-compress.webp';
+            controlButton.alt = 'Play';
         }
     })
 
