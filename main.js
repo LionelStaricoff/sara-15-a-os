@@ -32,14 +32,14 @@ try {
 
     /**
      * audio
-   
+     */
 
 
-     document.addEventListener('scroll', ()=>{
+    const section_musica = document.querySelector('#section_musica') ;
+    section_musica.addEventListener('click', ()=>{
         Util.play();
-        this.removeEventListener('scroll', Util.play());
-    
-    } );  */
+        section_musica.style.display = 'none';
+    } );
 
     document.querySelector('#play').addEventListener('click', () => {
 

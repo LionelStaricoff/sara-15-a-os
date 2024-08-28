@@ -60,7 +60,12 @@ section {
     width: min(600px,100%);
     position: relative;
  
+  &:nth-child(1){
+
+    position: fixed;
+    z-index: 4;
   
+  }
 
 }
 
