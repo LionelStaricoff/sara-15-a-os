@@ -62,7 +62,13 @@ export class Util {
 
     static crearSectionSeis() {
 
-        let texto = [ 'Para este gran sueño', 'Tan solo faltan']
+        let texto = ['Confirme  antes del 5 de septimbre']
+        texto.forEach(t => new crearSpanAnimation(t, '#sexto'));
+
+        document.querySelector('#sexto').innerHTML += ` <p id="cupo">
+               Confirme  <span> aqui </span> </p>`
+
+        texto = ['Para este gran sueño', 'Tan solo faltan']
         texto.forEach(t => new crearSpanAnimation(t, '#sexto'));
 
         // de fecha
@@ -110,11 +116,10 @@ export class Util {
         })();
 
         texto = ['Código de vestimenta', 'Hombres: Guayabera blanca', 'Mujer: Vestido largo',
-            'Lluvia de sobres']
+           'Color reservado: Rosado y dorado', 'Lluvia de sobres']
         texto.forEach(t => new crearSpanAnimation(t, '#quinto'));
 
-        document.querySelector('#quinto').innerHTML += ` <p id="cupo">Cupo (   ) <br>
-                Confirme aqui antes del 5 de septimbre  </p>`
+    
     }
 
     static scrollFx() {
@@ -161,10 +166,10 @@ export class Util {
 
     static agrandarImagen() {
         const imgs = document.querySelectorAll('.imagen_galeria');
-        imgs.forEach(i => 
+        imgs.forEach(i =>
 
-        i.addEventListener("click", () => 
-            i.classList.toggle("expanded") ) )
+            i.addEventListener("click", () =>
+                i.classList.toggle("expanded")))
     }
 
 

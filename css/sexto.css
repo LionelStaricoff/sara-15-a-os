@@ -4,9 +4,9 @@
   place-content: center;
   color: #333;
   text-align: center;
-  gap: 5em;
+  gap: 2em;
 
-  div:nth-child(1) {
+  /* div:nth-child(1) {
     font-size: 0.7em;
 
     span {
@@ -14,53 +14,62 @@
       font-weight: 300;
     }
 
+  } */
+
+
+}
+
+div:nth-child(2),
+div:nth-child(1),
+div:nth-child(3),
+div:nth-child(4) {
+
+  span {
+    font-weight: 200;
+    font-size: 1.5em;
   }
 
-  /* div:nth-child(2) {
-    font-size: 0.8em;
-    margin-top: 1.5em;
+}
 
-    span {
-      font-family: 'EBGaramond';
-      font-weight: 400;
-    } */
+#cupo {
+  font-weight: 200;
+  font-size: 1.5em;
+  span {
+    font-size: 1.5em;
+    color: blueviolet;
+    font-weight: bolder;
+    text-shadow: 3px 3px 3px goldenrod;
 
-  }
-
-  div:nth-child(2) {
-
-    span {
-      font-weight: 500;
-    }
 
   }
 
-  .contador {
-    width: min(25em, 100%);
-    height: 6em;
-    border: solid 3px rgb(51, 51, 51, 0.8);
-    margin: 0 auto;
-    padding: 0 0.5em;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 30px;
-    justify-content: center;
-    /* padding: 0 0.5em 0.5em 0.5em; */
+}
+
+.contador {
+  width: min(25em, 100%);
+  height: 6em;
+  border: solid 3px rgb(51, 51, 51, 0.8);
+  margin: 0 auto;
+  padding: 0 0.5em;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+  justify-content: center;
+  /* padding: 0 0.5em 0.5em 0.5em; */
+  position: relative;
+  /* margin-top: 0.5em; */
+
+
+
+  span {
+
+    height: 30%;
+    width: 1.8em;
+  }
+
+
+  i {
     position: relative;
-    /* margin-top: 0.5em; */
-
-
-
-    span {
-
-      height: 30%;
-      width: 1.8em;
-    }
-
-
-    i {
-      position: relative;
-      transform: translateY(-40px);
-    }
+    transform: translateY(-40px);
   }
-
+}
