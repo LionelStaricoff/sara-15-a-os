@@ -66,7 +66,10 @@ export class Util {
         texto.forEach(t => new crearSpanAnimation(t, '#sexto'));
 
         document.querySelector('#sexto').innerHTML += ` <p id="cupo">
-               Confirme  <span> aqui </span> </p>`
+      
+               Confirme  <span> aqui </span>
+                 <p class= 'cupos'> Cupo (1) </p>
+               </p>`
 
         texto = ['Para este gran sueño', 'Tan solo faltan']
         texto.forEach(t => new crearSpanAnimation(t, '#sexto'));
@@ -108,7 +111,7 @@ export class Util {
             const img = document.createElement('img')
             img.src = './img/1/mapa.webp';
 
-            const click = document.createElement('p')
+            const click = document.createElement('p');
             const a2 = document.createElement('a');
             a2.href = "https://maps.app.goo.gl/Xv2Vh33bBAr4rkii9?g_st=aw";
             a2.target = "_blank";

@@ -35,6 +35,9 @@ div:nth-child(4) {
   font-family: 'amoresa';
   font-weight: 200;
   font-size: 1.5em;
+  position: relative;
+
+
 
   span {
     font-size: 1.5em;
@@ -45,7 +48,17 @@ div:nth-child(4) {
 
   }
 
+
 }
+
+.cupos{
+  position: absolute;
+font-size: 1.5em;
+ top:  180px;
+ left: 160px;
+ font-family: 'amoresa';
+
+    }
 
 .contador {
   width: min(25em, 100%);
