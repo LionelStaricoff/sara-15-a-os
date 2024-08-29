@@ -108,10 +108,17 @@ export class Util {
             const img = document.createElement('img')
             img.src = './img/1/mapa.webp';
 
+            const click = document.createElement('p')
+            const a2 = document.createElement('a');
+            a2.href = "https://maps.app.goo.gl/Xv2Vh33bBAr4rkii9?g_st=aw";
+            a2.target = "_blank";
+            a2.innerText = 'Clic aqui';
+            click.appendChild(a2);
+
             const punteroImg = document.createElement('img')
             punteroImg.src = './img/1/puntero-compress.webp';
 
-            a.append(punteroImg, img)
+            a.append(punteroImg, img,click)
             document.querySelector('#quinto').appendChild(a);
         })();
 
