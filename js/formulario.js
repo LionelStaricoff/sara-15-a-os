@@ -88,7 +88,7 @@ border-radius: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-image: url('../img/1/fondo_formulario.webp');
+       background-color: #333;
 
     display: grid;
     justify-content: space-around;

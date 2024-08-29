@@ -3,7 +3,7 @@
     z-index: 2;
     width: min(20em, 100%);
     height: min(30em, 100%);
-border-radius: 25px;
+    border-radius: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -15,9 +15,9 @@ border-radius: 25px;
     text-align: center;
     place-items: center;
     gap: 20px;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     border: solid 3px #333;
-    
+
 
     button:nth-child(1) {
         height: fit-content;
@@ -35,7 +35,10 @@ border-radius: 25px;
         }
     }
 
-    input:nth-child(2), input:nth-child(3), input:nth-child(4), input:nth-child(5) {
+    input:nth-child(2),
+    input:nth-child(3),
+    input:nth-child(4),
+    input:nth-child(5) {
         text-align: center;
         border-radius: 15px;
         padding: 0.5em;
