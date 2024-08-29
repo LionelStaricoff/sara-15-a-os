@@ -160,21 +160,23 @@
    width: 3em;
    height: 3em;
    position: absolute;
-   animation: dedo 2s ease-in-out 5;
+  
    color: gold;
-   transform: translate();
+
+   transform:translate(200px, 140px); 
+   animation: dedo 2s ease-in-out 5;
     }
 }
 
 @keyframes dedo {
     0% {
 
-        transform:  translateY(0px);
+        transform:translate(200px, 140px); 
     }
 
     100%  {
 
-        transform:  translateY(-50px);
+        transform: translate(200px, 200px);  
     }
 
    
