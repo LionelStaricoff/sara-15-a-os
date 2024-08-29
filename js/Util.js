@@ -201,6 +201,8 @@ export class Util {
     let texto = ['Galeria:']
     texto.forEach(t => new crearSpanAnimation(t, '#septimo'));
 
+ 
+
 document.querySelector('#septimo').innerHTML+=
     `
        <img class="imagen_galeria" src="./img/1/galeria6.webp" alt="">

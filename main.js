@@ -24,10 +24,7 @@ try {
     })
 
 
-    /**
-        * efecto agrandar imagenes de la galeria
-        */
-    Util.agrandarImagen();
+    
 
 
     /**
@@ -62,6 +59,10 @@ try {
 
 
     Util.septimo();
+    /**
+        * efecto agrandar imagenes de la galeria
+        */
+    Util.agrandarImagen();
 
 } catch (error) {
     console.error(error)
