@@ -80,8 +80,8 @@
             filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
             transform: translateY(60px);
 
-        }    
-       
+        }
+
     }
 
     .reja {
@@ -117,16 +117,31 @@
         }
     }
 
-    span{
-        color:goldenrod;
-        font-family: 'EBGaramond';
-        font-size: 2em;
-        bottom: 0;
-       &:nth-child(9){
-     
-        margin-right: 0.1em;
-       }
+    #play {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 2em;
+        position: relative;
+        transform: translateY(0px);
+
+        span {
+            color: goldenrod;
+            font-family: 'EBGaramond';
+            font-size: 1.2em;
+
+            &:nth-child(1) {
+                margin-left: 6em;
+            }
+
+
+        }
+
     }
+
+
 
     .audio {
         width: 3.5em;
@@ -135,6 +150,32 @@
         filter: sepia(200%) contrast(200%);
         margin: 0 auto;
         padding-top: 1.5em;
-     
+        position: relative;
+
+        transform: translate(-40px, -10px);
+
     }
+
+    #dedo{
+   width: 3em;
+   height: 3em;
+   position: absolute;
+   animation: dedo 2s ease-in-out 5;
+   color: gold;
+   transform: translate();
+    }
+}
+
+@keyframes dedo {
+    0% {
+
+        transform:  translateY(0px);
+    }
+
+    100%  {
+
+        transform:  translateY(-50px);
+    }
+
+   
 }
