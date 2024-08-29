@@ -187,4 +187,27 @@ export class Util {
 
     }
 
+   static septimo(){
+    let texto = ['Galeria:']
+    texto.forEach(t => new crearSpanAnimation(t, '#septimo'));
+
+document.querySelector('#septimo').innerHTML+=
+    `
+       <img class="imagen_galeria" src="./img/1/galeria6.webp" alt="">
+            <img class="imagen_galeria" src="./img/1/galeria2.webp">
+            <img class="imagen_galeria" src="./img/1/galeria7.webp" alt="">
+
+            <img class="imagen_galeria" src="./img/1/galeria1.webp">
+            <img class="imagen_galeria" src="./img/1/galeria3.webp" alt="">
+            <img class="imagen_galeria" src="./img/1/galeria4.webp" alt="">
+            <img class="imagen_galeria" src="./img/1/galeria5.webp" alt="">
+
+
+            <img class="imagen_galeria" src="./img/1/galeria8.webp" alt="">
+            <img class="imagen_galeria" src="./img/1/galeria9.webp" alt="">
+            <img class="imagen_galeria" src="./img/1/galeria10.jpeg" alt="">
+    `
+    ;
+    }
+
 }

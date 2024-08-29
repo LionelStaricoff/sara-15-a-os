@@ -5,46 +5,25 @@
     height: 100%;
 
     gap: 10px;
-    /* display: grid;
-    grid-template-columns:repeat(12, auto); */
+  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     transition: all 2s ease-in;
 
+    div{
+      position: absolute;
+      top: -60px;
+    }
+
     img {
-        /* width: 100% ; */
-        /* height: min(10em, 100%); */
         object-fit: cover;
         width: min(10em, 100%);
         border-radius: 10px;
 
-     
-
-        /*        
-      &:nth-child(1){
-        grid-area: 1 / 1 / span 1 / span 6;
-      }
-      &:nth-child(2){
-        grid-area: 1 / 7 / span 1 / span 6 ;
-      }
-      &:nth-child(3){
-        grid-area: 2 / 1 / span 1 / span 3 ;
-      } */
-
     }
 }
-
-/* @media( max-width:652px ){
-    #septimo {
-        grid-template-columns: auto;
-        aspect-ratio: auto; 
-        height: auto;
-        width: 50%;
-    } */
-
-
     .expanded {
         position: fixed;
         width: 80% !important;

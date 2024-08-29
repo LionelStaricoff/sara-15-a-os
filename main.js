@@ -60,6 +60,9 @@ try {
         }
     })
 
+
+    Util.septimo();
+
 } catch (error) {
     console.error(error)
 }
