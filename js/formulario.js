@@ -155,7 +155,10 @@ border-radius: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-image: url('../img/1/fondo_formulario.webp');
+       background-image: url('../img/1/fondo_formulario.webp');
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     display: grid;
     justify-content: space-around;
@@ -220,6 +223,9 @@ border-radius: 25px;
     transform: translate(-50%, -50%);
 
     background-image: url('../img/1/fondo_formulario.webp');
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     display: grid;
     justify-content: space-around;
@@ -285,7 +291,10 @@ border-radius: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-image: url('../img/1/fondo_formulario.webp');
+     background-image: url('../img/1/fondo_formulario.webp');
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     display: grid;
     justify-content: space-around;
