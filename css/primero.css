@@ -163,7 +163,7 @@
   
    color: gold;
 
-   transform:translate(200px, 140px); 
+   transform:translate(150px, 60px); 
    animation: dedo 2s ease-in-out 5;
     }
 }
@@ -171,12 +171,12 @@
 @keyframes dedo {
     0% {
 
-        transform:translate(200px, 140px); 
+        transform:translate(150px, 60px); 
     }
 
     100%  {
 
-        transform: translate(200px, 200px);  
+        transform: translate(150px, 110px);  
     }
 
    
