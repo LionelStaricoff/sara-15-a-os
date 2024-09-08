@@ -19,7 +19,7 @@ try {
 
     const cupo = document.querySelector('#cupo');
     cupo.addEventListener('click', () => {
-        const f1 = new Formulario(null, '573003932889');
+        const f1 = new Formulario(null, '571234567');
         f1.dosPersonas();
     })
 
